@@ -7,7 +7,9 @@ def join_nested_strings(src)
     while src.length > row do
       column=0
       while src[row].length > column do
-      if src[row][column].is_a(String)
+      if src[row][column].is_a?(String)
+        stringy << src[row][column]
+      end
       column+=1
       end
       row+=1
